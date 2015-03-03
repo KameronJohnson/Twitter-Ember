@@ -1,0 +1,24 @@
+<h1>Twitter uh huh</h1>
+
+<hr>
+
+  <div class="row">
+
+
+    <div class="col-md-12">
+
+      {{#each}}
+
+      <h5>{{#link-to 'tweet' this.id}}{{twitName}}{{/link-to}}</h5>
+      <p>{{#link-to 'tweet' this.id}}{{tweetMsg}}{{/link-to}}</p>
+
+      {{/each}}
+    </div>
+
+
+
+  <div>
+    {{outlet}}
+  </div>
+
+</div>
