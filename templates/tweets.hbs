@@ -8,8 +8,10 @@
       <form id="twitter-form" class="form-inline" role="form">
         <div class="form group">
           {{input id='twit' class="form-control" value=msg}}
+          <button class="btn btn-success" {{action 'addTweet'}}>Tweet!</button>
+          <button class="btn btn-info" {{action 'reverseSort'}}>Sort</button>
         </div>
-        <button class="btn btn-danger" {{action 'addTweet'}}>Rumble</button>
+
       </form>
 
       {{#each}}
@@ -19,7 +21,6 @@
 
       {{/each}}
     </div>
-
 
 
   <div>
